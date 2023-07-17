@@ -1,0 +1,79 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.t-home-page {
+  padding-bottom: 130px;
+
+  .t-home-page__header {
+    padding: 12px 0;
+    border-bottom: 1px solid $gray-lighter-color;
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+
+      @include from($medium) {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+    .header-buttons {
+      button {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 36px;
+        width: 36px;
+
+        &:first-of-type {
+          margin-right: 16px;
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.5rem;
+        }
+      }
+
+      @include from($medium) {
+        display: none;
+      }
+    }
+
+    .header-desktop-buttons {
+      display: none;
+
+      @include from($medium) {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+
+        p {
+          text-transform: uppercase;
+        }
+        a {
+          color: $black-color;
+          font-size: 1.5rem;
+        }
+        button {
+          width: 185px;
+          height: 48px;
+        }
+      }
+    }
+
+    @include from($medium) {
+      padding: 24px 0;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+@use "../../../sass/base/utilities" as *;
+
+.o-bottom-navbar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  @extend .main-container;
+  padding: 0;
+
+  @include from($x-large) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .o-bottom-navbar__container {
+    background-color: $gray-light-color;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    max-width: 824px;
+    margin: 0 auto;
+    padding: 0 36px;
+
+    @include from($large) {
+      height: 96px;
+      padding: 0 24px;
+    }
+
+    a {
+      @include from($large) {
+        border-radius: 36px;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        padding: 12px 16px;
+        transition: background-color 0.2s ease;
+
+        &:hover:not(:has(> .a-circle-btn)) {
+          background-color: $btn-light-hover-color;
+        }
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      p {
+        display: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        @include from($large) {
+          display: block;
+        }
+      }
+
+      i,
+      p {
+        color: $gray-color;
+      }
+
+      .a-circle-btn {
+        display: grid;
+        place-items: center;
+        background-color: $gray-light-color;
+        border-radius: 50%;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2),
+          0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+          0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 56px;
+        height: 56px;
+        position: relative;
+        top: -28px;
+
+        @include from($large) {
+          height: 72px;
+          width: 72px;
+          top: -48px;
+        }
+
+        .a-circle-btn__image {
+          height: 40.129px;
+          width: 34.714px;
+          background-image: url("../../../assets/images/navhe-logo-disabled.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &.active {
+        i {
+          color: $primary-color;
+
+          @include from($large) {
+            color: #fff;
+          }
+        }
+
+        p {
+          color: #fff;
+        }
+
+        .a-circle-btn__image {
+          background-image: url("../../../assets/images/navhe-logo.svg");
+        }
+
+        @include from($large) {
+          &:not(:has(> .a-circle-btn)) {
+            background-color: $primary-color;
+          }
+          &:hover:not(:has(> .a-circle-btn)) {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .o-bottom-navbar__terms {
+    display: none;
+    color: $gray-dark-color;
+
+    @include from($x-large) {
+      display: inline;
+      position: absolute;
+      right: 52px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}

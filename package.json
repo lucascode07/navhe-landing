@@ -8,10 +8,10 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },
@@ -22,6 +22,7 @@
     "gatsby-plugin-sitemap": "^6.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-glider": "^4.0.2",
     "sass": "^1.63.6"
   },
   "devDependencies": {
