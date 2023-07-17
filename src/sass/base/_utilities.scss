@@ -1,0 +1,33 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.main-container {
+  padding: 0 16px;
+  max-width: $x-large;
+  margin: 0 auto;
+
+  @include from($x-large) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: none;
+  border-radius: 36px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+  &:active {
+    background-color: $btn-active-color;
+  }
+}

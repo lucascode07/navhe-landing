@@ -1,0 +1,19 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.a-terms-conditions {
+  border-top: 1px solid $gray-lighter-color;
+  border-bottom: 1px solid $gray-lighter-color;
+  padding: 12px 0;
+  text-align: center;
+
+  a {
+    color: $gray-dark-color;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  @include from($x-large) {
+    display: none;
+  }
+}
