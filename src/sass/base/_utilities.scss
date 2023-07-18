@@ -31,3 +31,11 @@
     background-color: $btn-active-color;
   }
 }
+
+body.overflow {
+  overflow: hidden;
+
+  @include from($medium) {
+    overflow: unset;
+  }
+}

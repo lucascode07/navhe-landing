@@ -24,6 +24,10 @@ const HomeGlider = () => {
         setCounter(e.detail.slide + 1)
     }
 
+    const test = (e: any) => {
+        console.log(e)
+    }
+
     return (
         <div className='o-home-glider'>
             <Glider
@@ -32,6 +36,7 @@ const HomeGlider = () => {
                 arrows={arrows}
                 hasArrows
                 onSlideVisible={setPage}
+                onLoad={test}
             >
                 <section className='o-home-glider__section'>
                     <div className='section-info'>
