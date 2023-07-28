@@ -26,7 +26,7 @@ const BottomNavbar = () => {
                             )
                             :
                             (
-                                <Link key={link.route} to={link.route} activeClassName='active'>
+                                <Link key={link.route} to={link.route} activeClassName='active' partiallyActive={true}>
                                     <i className={link.icon}></i>
                                     <p>{link.name}</p>
                                 </Link>
