@@ -1,0 +1,90 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.m-internal-sidebar {
+  .m-internal-sidebar__expand-btn {
+    background-color: #fff;
+    position: fixed;
+    width: calc(100% - 32px);
+    padding: 12px 0 24px;
+    z-index: 20;
+
+    button {
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      height: 36px;
+      width: 100%;
+      padding: 0;
+    }
+
+    @include from($large) {
+      display: none;
+    }
+  }
+  .m-internal-sidebar__navigation {
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 72px);
+    position: fixed;
+    left: 0;
+    top: -100%;
+    padding: 0 16px 0;
+    z-index: 10;
+    transition: top 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &.expanded {
+      top: 72px;
+    }
+
+    .navigation-link-container {
+      display: block;
+      border-bottom: 1px solid $gray-lighter-color;
+      margin-bottom: 24px;
+
+      .navigation-link {
+        border-radius: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $gray-dark-color;
+        padding: 0 22px;
+        height: 48px;
+
+        i {
+          font-size: 1.5rem;
+        }
+
+        .navigation-link__info {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          column-gap: 40px;
+        }
+      }
+      &.active {
+        border-bottom-color: transparent;
+
+        .navigation-link {
+          background-color: $primary-light-color;
+          color: $primary-color;
+          font-weight: 500;
+        }
+      }
+      &:hover:not(.active) {
+        border-bottom-color: transparent;
+
+        .navigation-link {
+          background-color: $btn-light-hover-color;
+        }
+      }
+    }
+
+    @include from($large) {
+      position: static;
+      height: 528px;
+      padding-left: 24px;
+      padding-right: 0;
+    }
+  }
+}

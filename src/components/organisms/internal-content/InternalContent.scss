@@ -1,0 +1,52 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.o-internal-content {
+  padding-top: 72px;
+  margin-bottom: 48px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $cyan-color;
+    border-radius: 12px;
+  }
+
+  .section-badge {
+    background-color: $primary-color;
+    border-radius: 8px;
+    color: #fff;
+    display: inline-block;
+    font-family: $font-ubuntu-mono;
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+    height: 36px;
+    width: 172px;
+    text-align: center;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 2.1875rem;
+    font-weight: 400;
+    letter-spacing: 0.088px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $gray-dark-color;
+    margin-bottom: 36px;
+  }
+
+  @include from($large) {
+    border-bottom: 1px solid $gray-lighter-color;
+    height: calc(100vh - 192px);
+    overflow-y: overlay;
+    padding: 0 32px 24px 64px;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  @include from($x-large) {
+    margin-bottom: 0;
+  }
+}

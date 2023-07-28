@@ -1,17 +1,6 @@
-import { CreatePagesArgs } from "gatsby";
-import { InternalPage } from "./src/interfaces/internal-page.interface";
-const path = require("path");
+import { InternalPage } from "../interfaces/internal-page.interface";
 
-exports.onCreateBabelConfig = ({ actions }: any) => {
-  actions.setBabelPlugin({
-    name: "@babel/plugin-transform-react-jsx",
-    options: {
-      runtime: "automatic",
-    },
-  });
-};
-
-const listInternalPages: InternalPage[] = [
+export const listInternalPages: InternalPage[] = [
   {
     slug: "nosotros",
     sidebarNavigationData: [
@@ -186,22 +175,3 @@ const listInternalPages: InternalPage[] = [
     ],
   },
 ];
-
-exports.createPages = async ({ actions, graphql }: CreatePagesArgs) => {
-  listInternalPages.forEach((page) => {
-    page.subpages.forEach((subpage) => {
-      const slug = `${page.slug}/${subpage.slug}`;
-      actions.createPage({
-        path: slug,
-        component: path.resolve(
-          `./src/components/templates/internal-page-template/InternalPageTemplate.tsx`
-        ),
-        context: {
-          sidebarData: page.sidebarNavigationData,
-          parentSlug: page.slug,
-          slug: subpage.slug,
-        },
-      });
-    });
-  });
-};

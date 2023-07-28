@@ -87,12 +87,17 @@
         }
 
         .a-circle-btn__image {
-          height: 40.129px;
-          width: 34.714px;
+          height: 31.21px;
+          width: 27px;
           background-image: url("../../../assets/images/navhe-logo-disabled.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+
+          @include from($large) {
+            height: 40.129px;
+            width: 34.714px;
+          }
         }
       }
 

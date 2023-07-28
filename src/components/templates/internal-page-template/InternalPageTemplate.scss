@@ -1,0 +1,21 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.t-internal-page-template {
+  padding-bottom: 120px;
+
+  @include from($large) {
+    padding-bottom: 150px;
+  }
+
+  @include from($x-large) {
+    padding-bottom: 0;
+  }
+}
+.t-internal-page-template__container {
+  @include from($large) {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    padding-top: 48px;
+  }
+}

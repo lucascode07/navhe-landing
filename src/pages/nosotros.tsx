@@ -1,10 +1,15 @@
-import Layout from "../components/templates/layout/Layout"
+import { navigate } from "gatsby"
+import { useEffect } from "react"
 
 const AboutUsPage = () => {
+
+    useEffect(() => {
+        navigate('/nosotros/quienes-somos')
+    }, [])
+
+
     return (
-        <Layout>
-            <div>nosotros</div>
-        </Layout>
+        <></>
     )
 }
 
