@@ -2,32 +2,38 @@
   font-family: "UbuntuF";
   font-weight: 300;
   src: url("/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "UbuntuF";
   font-weight: 400;
   src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "UbuntuF";
   font-weight: 500;
   src: url("/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "UbuntuF";
   font-weight: 700;
   src: url("/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "UbuntuF Mono";
   font-weight: 400;
   src: url("/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "UbuntuF Mono";
   font-weight: 700;
   src: url("/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {

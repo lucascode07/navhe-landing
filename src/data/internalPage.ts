@@ -174,4 +174,59 @@ export const listInternalPages: InternalPage[] = [
       },
     ],
   },
+  {
+    slug: "funcionamiento",
+    sidebarNavigationData: [
+      { copy: "Para Clientes", icon: "icon-user", slug: "clientes" },
+      { copy: "Para Pilotos", icon: "icon-motobike", slug: "pilotos" },
+      { copy: "Para Asociados", icon: "icon-store", slug: "asociados" },
+    ],
+    subpages: [
+      {
+        slug: "clientes",
+        sections: [
+          [
+            {
+              title: "¿Cómo hacer mi pedido por navhe?", // titulo de sección de la página
+              text: [
+                "Navhe quiere facilitarte el proceso de conocer la manera de realizar tu pedido de manera eficiente. Por eso, te hemos preparado este video interactivo donde conocerás la facilidad de preparar tu lista de compra hasta finalizar tu pedido.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+          ],
+        ],
+      },
+      {
+        slug: "pilotos",
+        sections: [
+          [
+            {
+              title: "¿Cómo recepcionar un pedido en navhe?",
+              text: [
+                "Navhe quiere facilitarte el proceso de conocer la manera de realizar tu pedido de manera eficiente. Por eso, te hemos preparado este video interactivo donde conocerás la facilidad de preparar tu lista de compra hasta finalizar tu pedido.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+          ],
+        ],
+      },
+      {
+        slug: "asociados",
+        sections: [
+          [
+            {
+              title: "¿Cómo aceptar un pedido en navhe?",
+              text: [
+                "Navhe quiere facilitarte el proceso de conocer la manera de realizar tu pedido de manera eficiente. Por eso, te hemos preparado este video interactivo donde conocerás la facilidad de preparar tu lista de compra hasta finalizar tu pedido.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+          ],
+        ],
+      },
+    ],
+  },
 ];

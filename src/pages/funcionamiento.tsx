@@ -1,10 +1,14 @@
-import Layout from "../components/templates/layout/Layout"
+import { useEffect } from "react"
+import { navigate } from "gatsby"
 
 const OperationPage = () => {
+
+    useEffect(() => {
+        navigate('/funcionamiento/clientes')
+    }, [])
+
     return (
-        <Layout>
-            <div>funcionamiento</div>
-        </Layout>
+        <></>
     )
 }
 
