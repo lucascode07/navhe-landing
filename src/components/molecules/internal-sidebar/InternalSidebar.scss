@@ -50,6 +50,7 @@
         color: $gray-dark-color;
         padding: 0 22px;
         height: 48px;
+        transition: background-color .25s ease;
 
         i {
           font-size: 1.5rem;
