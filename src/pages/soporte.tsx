@@ -1,10 +1,13 @@
-import Layout from "../components/templates/layout/Layout"
+import { useEffect } from "react"
+import { navigate } from "gatsby"
 
 const SupportPage = () => {
+    useEffect(() => {
+        navigate('/soporte/cuenta')
+    }, [])
+
     return (
-        <Layout>
-            <div>soporte</div>
-        </Layout>
+        <></>
     )
 }
 
