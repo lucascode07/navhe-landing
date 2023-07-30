@@ -1,10 +1,13 @@
-import Layout from "../components/templates/layout/Layout"
+import { useEffect } from "react"
+import { navigate } from "gatsby"
 
 const GeneralTermsPage = () => {
+    useEffect(() => {
+        navigate('/terminos-generales/terminos-condiciones')
+    }, [])
+
     return (
-        <Layout>
-            <div>GeneralTermsPage</div>
-        </Layout>
+        <></>
     )
 }
 

@@ -39,7 +39,10 @@ const InternalSidebar = ({ linksList }: Props) => {
                             to={`../${link.slug}`} activeClassName='active'>
                             <div className='navigation-link'>
                                 <div className='navigation-link__info'>
-                                    <i className={link.icon}></i>
+                                    {
+                                        (link.icon !== '') &&
+                                        <i className={link.icon}></i>
+                                    }
                                     <p>{link.copy}</p>
                                 </div>
                                 <i className='icon-arrow-right'></i>

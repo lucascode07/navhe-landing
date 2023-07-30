@@ -37,7 +37,8 @@ const BottomNavbar = () => {
             <Link
                 to='/terminos-generales'
                 className='o-bottom-navbar__terms'
-                activeClassName='active'>
+                activeClassName='active'
+                partiallyActive={true}>
                 Términos Generales
             </Link>
         </div>

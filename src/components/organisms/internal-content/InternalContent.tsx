@@ -16,9 +16,14 @@ const InternalContent = ({ sections, parentSlug, title }: Props) => {
 
     return (
         <section className='o-internal-content'>
-            <div className='section-badge'>
-                <p>{parentSlug.toUpperCase()}</p>
-            </div>
+            {
+                (parentSlug !== 'terminos-generales') &&
+                (
+                    <div className='section-badge'>
+                        <p>{parentSlug.toUpperCase()}</p>
+                    </div>
+                )
+            }
             <h2>{title}</h2>
             {
                 sections.map((section, index) => (
