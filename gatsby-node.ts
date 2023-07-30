@@ -394,6 +394,81 @@ const listInternalPages: InternalPage[] = [
       },
     ],
   },
+  {
+    slug: "terminos-generales",
+    sidebarNavigationData: [
+      {
+        copy: "Términos y condiciones",
+        icon: "",
+        slug: "terminos-condiciones",
+      },
+      { copy: "Políticas de cookies", icon: "", slug: "politica-cookies" },
+    ],
+    subpages: [
+      {
+        slug: "terminos-condiciones",
+        sections: [
+          [
+            {
+              title: "1. Introducción",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+            {
+              title: "2. Texto simulado",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+            {
+              title: "3. Texto simulado",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+          ],
+        ],
+      },
+      {
+        slug: "politica-cookies",
+        sections: [
+          [
+            {
+              title: "1. Introducción",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+            {
+              title: "2. Texto simulado",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+            {
+              title: "3. Texto simulado",
+              text: [
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. dictum felis eu pede mollis pretium. Integer tincidunt.",
+              ],
+              gridData: [],
+              statsInfo: [],
+            },
+          ],
+        ],
+      },
+    ],
+  },
 ];
 
 exports.createPages = async ({ actions, graphql }: CreatePagesArgs) => {
