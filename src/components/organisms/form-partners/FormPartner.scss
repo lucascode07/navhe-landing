@@ -1,0 +1,11 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.o-form-partners {
+  margin-bottom: 48px;
+
+  @include from($large) {
+    height: calc(100vh - 186px);
+    margin-bottom: 0;
+  }
+}
