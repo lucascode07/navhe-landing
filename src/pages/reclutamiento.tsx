@@ -1,11 +1,12 @@
 import Layout from "../components/templates/layout/Layout"
+import RecruitmentPage from "../components/templates/recruitment-page/RecruitmentPage"
 
-const RecruitmentPage = () => {
+const Recruitment = () => {
     return (
         <Layout>
-            <div>reclutamiento</div>
+            <RecruitmentPage />
         </Layout>
     )
 }
 
-export default RecruitmentPage
+export default Recruitment

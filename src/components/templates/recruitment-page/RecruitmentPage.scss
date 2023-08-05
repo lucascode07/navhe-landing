@@ -1,0 +1,76 @@
+@use "../../../sass/variables" as *;
+@use "../../../sass/mixins" as *;
+
+.t-recruitment-page {
+  padding-top: 24px;
+  padding-bottom: 150px;
+
+  .recruitment-top-background {
+    background-color: $primary-color;
+    border-radius: 0 0 96px 96px;
+    height: 288px;
+    width: 100%;
+    max-width: $x-large;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: height 0.25s ease;
+
+    &.reduce-height {
+      height: 216px;
+    }
+
+    @include from($large) {
+      height: 216px;
+
+      &.reduce-height {
+        height: 168px;
+      }
+    }
+
+    @include from($x-large) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .recruitment-page__forms-cards {
+    margin-bottom: 48px;
+
+    .section-badge {
+      margin-bottom: 36px;
+
+      p {
+        width: 157px;
+        height: 36px;
+        background-color: #230a66;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-ubuntu-mono;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      @include from($large) {
+        display: none;
+      }
+    }
+  }
+  .forms-cards {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 335px));
+    gap: 36px 32px;
+  }
+
+  @include from($large) {
+    padding-top: 48px;
+  }
+  @include from($x-large) {
+    padding-bottom: 0;
+  }
+}

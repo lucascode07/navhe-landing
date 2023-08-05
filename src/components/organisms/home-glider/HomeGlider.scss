@@ -1,6 +1,5 @@
 @use "../../../sass/variables" as *;
 @use "../../../sass/mixins" as *;
-@use "../../../sass/base/utilities" as *;
 
 .o-home-glider {
   position: relative;
@@ -83,7 +82,22 @@
       line-height: 24px;
       letter-spacing: 0.175px;
       margin: 0 auto;
-      @extend .btn-primary;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 36px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 12px 0;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        background-color: $btn-hover-color;
+      }
+      &:active {
+        background-color: $btn-active-color;
+      }
     }
 
     @include from($x-large) {
@@ -131,12 +145,13 @@
     margin-bottom: 36px;
 
     button {
-      background-color: $primary-light-color;
+      background-color: $gray-light-color;
       border: none;
       border-radius: 50%;
       height: 48px;
       width: 48px;
       text-align: center;
+      transition: background-color 0.25s ease;
 
       &:first-of-type {
         transform: rotate(180deg);
@@ -144,14 +159,21 @@
 
       &:disabled {
         background-color: $gray-light-color;
+        opacity: 50%;
+      }
+
+      &:hover:not(&:disabled) {
+        background-color: $primary-light-color;
+
         i {
-          color: $gray-dark-color;
+          color: $primary-color;
         }
       }
 
       i {
-        color: $primary-color;
+        color: $gray-dark-color;
         font-size: 2rem;
+        transition: color 0.25s ease;
       }
     }
 

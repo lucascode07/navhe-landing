@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill=""/>
+<g id="RECLUTAMIENTO" clip-path="url(#clip0_0_1)">
+<rect width="1280" height="720" transform="translate(-296 -372)" fill=""/>
+<rect id="Rectangle 230" x="-150.5" y="-11.5" width="189" height="47" rx="23.5" stroke="#CCCCCC"/>
+<g id="arrow_drop_down-24px 5" clip-path="url(#clip1_0_1)">
+<path id="Vector" d="M7 10L12 15L17 10H7Z" fill="#333333"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1280" height="720" fill="white" transform="translate(-296 -372)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="24" height="24" fill=""/>
+</clipPath>
+</defs>
+</svg>
