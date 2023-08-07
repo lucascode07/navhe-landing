@@ -17,5 +17,6 @@ export const Head: HeadFC = () => (
     <SEO
         title="Reclutamiento | Navhe Delivery"
         description="Página de reclutamiento para Navhe Delivery, postula a uno de nuestros puestos de trabajo"
+        slug="reclutamiento"
     />
 )

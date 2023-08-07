@@ -10,7 +10,7 @@ const SEO = ({ title, description, lang, slug, noIndex, urlCanonical }: Partial<
         lang: lang ?? 'es',
         description: description ?? defaultDescription,
         noIndex: noIndex ?? false,
-        urlCanonical: urlCanonical ?? 'https://navhe-delivery-landing.netlify.app/',
+        urlCanonical: urlCanonical ?? `${siteUrl}/${slug}`,
         ogImage: siteUrl + ogImage,
         slug: slug ? `${siteUrl}/${slug}` : siteUrl,
         author,
