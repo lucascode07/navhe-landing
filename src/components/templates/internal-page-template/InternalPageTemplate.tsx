@@ -5,7 +5,7 @@ import InternalContent from "../../organisms/internal-content/InternalContent"
 import { listInternalPages } from "../../../data/internalPage"
 import TermsConditions from "../../atoms/terms-conditions/TermsConditions"
 import { InternalNavigationItem } from "../../../interfaces/internal-page.interface";
-import { HeadFC } from "gatsby";
+import SEO from "../../seo";
 
 interface Props {
     pageContext: {
@@ -53,4 +53,14 @@ const InternalPageTemplate = ({ pageContext }: Props) => {
 
 export default InternalPageTemplate
 
-export const Head: HeadFC = () => <title>Internal Page</title>
+export const Head = ({ pageContext }: Props) => {
+
+    // * Lógica provisional:
+    const { sidebarData, slug } = pageContext;
+
+    const selectedTitle = sidebarData.find(
+        item => item.slug === slug
+    );
+
+    return <SEO title={`${selectedTitle?.copy} | Navhe Delivery`} />
+}
