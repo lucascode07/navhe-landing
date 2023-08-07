@@ -2,20 +2,67 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Navhe Landing`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Navhe Delivery`,
+    description: `Sitio web de Navhe Delivery, empresa de delivery peruana`,
+    author: `Navhe`,
+    siteUrl: `https://navhe-delivery-landing.netlify.app/`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-sass",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "./src/assets/images/navhe-logo.svg",
+        name: "Navhe Delivery",
+        start_url: "/",
+        background_color: "#541cf9",
+        theme_color: "#541cf9",
+        icon: `src/assets/images/navhe-favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: [
+          "/nosotros/",
+          "/reclutamiento/",
+          "/funcionamiento/",
+          "/soporte/",
+          "/terminos-generales/",
+          "/terminos-generales/*",
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://navhe-delivery-landing.netlify.app/`,
+        sitemap: `https://navhe-delivery-landing.netlify.app/sitemap-index.xml`,
+        policy: [
+          {
+            userAgent: "*",
+            disallow: [
+              "/nosotros/",
+              "/reclutamiento/",
+              "/funcionamiento/",
+              "/soporte/",
+              "/terminos-generales/*",
+            ],
+            allow: [
+              "/nosotros/*",
+              "/reclutamiento/*",
+              "/funcionamiento/*",
+              "/soporte/*",
+            ],
+          },
+        ],
       },
     },
   ],
