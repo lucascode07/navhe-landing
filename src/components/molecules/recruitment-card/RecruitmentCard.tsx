@@ -14,7 +14,7 @@ interface Props {
 const RecruitmentCard = ({ data, sendType }: Props) => {
     return (
         <div className='m-recruitment-card'>
-            <img src={data.image} alt="imagen  de acompañamiento" />
+            <img width={293} height={189.7} src={data.image} alt="imagen  de acompañamiento" />
             <h2>{data.title}</h2>
             <p>{data.description}</p>
             <button

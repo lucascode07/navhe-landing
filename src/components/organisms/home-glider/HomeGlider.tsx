@@ -60,8 +60,8 @@ const HomeGlider = () => {
                                 <p className='section-question'>¿Tienes nuestra App?</p>
                                 <p className='section-answer'>Descárgate nuestra App disponible en iOS y en Android.</p>
                                 <div className='section-images'>
-                                    <img src={googleImg} alt="Logo de google play" />
-                                    <img src={appleImg} alt="Logo de app store" />
+                                    <img width={162} height={48} src={googleImg} alt="Logo de google play" />
+                                    <img width={145} height={48} src={appleImg} alt="Logo de app store" />
                                 </div>
                             </div>
                             <img className='section-image section-image__desktop' src={home01Img} alt="imagen de la sección" />
@@ -101,12 +101,14 @@ const HomeGlider = () => {
             <div className='o-home-glider__controls'>
                 <button
                     id='buttonPrev'
+                    aria-label='Botón para retroceder slider'
                     disabled={counter === 1}>
                     <i className='icon-arrow-right'></i>
                 </button>
                 <p>{counter}/3</p>
                 <button
                     id='buttonNext'
+                    aria-label='Botón siguiente slider'
                     disabled={counter === 3}>
                     <i className='icon-arrow-right'></i>
                 </button>

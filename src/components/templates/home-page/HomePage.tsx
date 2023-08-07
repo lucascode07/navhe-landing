@@ -30,10 +30,10 @@ const HomePage = () => {
                         </div>
                         <div className='header-desktop-buttons'>
                             <p>Síguenos</p>
-                            <a href="https://www.instagram.com/navhedeliveryapp/" target='_blank'>
+                            <a href="https://www.instagram.com/navhedeliveryapp/" target='_blank' aria-label="Abrir página de instagram">
                                 <i className='icon-instagram'></i>
                             </a>
-                            <a href="https://www.facebook.com/navhedeliveryapp" target='_blank'>
+                            <a href="https://www.facebook.com/navhedeliveryapp" target='_blank' aria-label="Abrir página de facebook">
                                 <i className='icon-facebook'></i>
                             </a>
                             <button className='btn-primary'>Iniciar Sesión</button>

@@ -18,7 +18,7 @@ const BottomNavbar = () => {
                         (link.isHome)
                             ?
                             (
-                                <Link key={link.route} to={link.route} activeClassName='active'>
+                                <Link key={link.route} to={link.route} activeClassName='active' aria-label='Enlace para regresar al inicio'>
                                     <div className='a-circle-btn'>
                                         <div className='a-circle-btn__image'></div>
                                     </div>

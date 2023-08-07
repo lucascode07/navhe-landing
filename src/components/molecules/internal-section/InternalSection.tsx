@@ -37,7 +37,7 @@ const InternalStats = ({ statsData }: StatsProps) => {
             {
                 statsData.map(stat => (
                     <div key={stat.title} className='section-stats__item'>
-                        <img src={stat.image} alt="Imagen de estadística" />
+                        <img width={145} height={145} src={stat.image} alt="Imagen de estadística" />
                         <p>{stat.title}</p>
                         <p>{stat.number}</p>
                     </div>

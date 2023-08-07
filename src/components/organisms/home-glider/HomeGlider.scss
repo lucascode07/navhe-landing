@@ -7,6 +7,10 @@
   .o-home-glider__section {
     padding-top: 24px;
 
+    &.glider-slide {
+      user-select: unset;
+    }
+
     .section-badge {
       margin-bottom: 24px;
       order: 1;

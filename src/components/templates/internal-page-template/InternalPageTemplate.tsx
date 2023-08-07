@@ -56,11 +56,11 @@ export default InternalPageTemplate
 export const Head = ({ pageContext }: Props) => {
 
     // * Lógica provisional:
-    const { sidebarData, slug } = pageContext;
+    const { sidebarData, parentSlug, slug } = pageContext;
 
     const selectedTitle = sidebarData.find(
         item => item.slug === slug
     );
 
-    return <SEO title={`${selectedTitle?.copy} | Navhe Delivery`} />
+    return <SEO title={`${selectedTitle?.copy} | Navhe Delivery`} slug={`${parentSlug}/${slug}`} />
 }
