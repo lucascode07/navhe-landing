@@ -1,49 +1,65 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://navhe-delivery-landing.netlify.app/">
+    <img alt="Navhe Logo" src="https://navhe.app/assets/images/BienvenidosSection/navigation/xd.svg" width="80" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  Navhe Delivery Landing
 </h1>
 
-## 🚀 Quick start
+<p align="center">
+  <i>Landing page de Navhe, aplicación de servicio de delivery peruana donde encontrarás productos con las mejores ofertas en tu tienda favorita.</i>
+</p>
 
-1.  **Create a Gatsby site.**
+## Installation
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+To be able to start development on Navhe Delivery Landing make sure that you have the following pre-requisites installed:
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+- Node.js v18.16.0
+- Gatsby CLI version: 5.11.0
 
-2.  **Start developing.**
+Then you can run this command:
 
-    Navigate into your new site’s directory and start it up.
+```bash
+  npm install
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Usage
 
-3.  **Open the code and start customizing!**
+Runs the app in the development mode.
 
-    Your site is now running at http://localhost:8000!
+```bash
+  npm run develop
+```
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+Builds the app for production to the `public` folder.
 
-4.  **Learn more**
+```bash
+  npm run build
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+Runs a local server to preview the build
 
-## 🚀 Quick start (Netlify)
+```bash
+  npm run serve
+```
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+## Development Skills
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+- React JS
+- React Hook Form (For forms validations)
+- Gatsby v5 (SSG)
+- GraphQL
+- Scss
+- Mobile First
+- Responsive Design
+- Atomic Design
+- SEO (meta tags, sitemap.xml, robots.txt)
+- Performance and Accesibility (ARIA atributes)
+- Trunk base development
+- Conventional commits
+- Continuous Integration (Github - Netlify automated deploy)
+
+## Authors
+
+- [@lucascode07](https://www.github.com/lucascode07) - Lucas Barrenechea
