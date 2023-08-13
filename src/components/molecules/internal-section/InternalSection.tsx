@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import { InternalGridData, InternalSectionContent, InternalStatsInfo } from '../../../interfaces/internal-page.interface';
 import './InternalSection.scss';
 
@@ -48,6 +50,15 @@ const InternalStats = ({ statsData }: StatsProps) => {
 }
 
 const InternalSection = ({ section }: Props) => {
+
+    useEffect(() => {
+        ScrollReveal({
+            origin: 'right',
+            distance: '30px',
+            duration: 1000,
+        }).reveal('.internal-content-section');
+    }, []);
+
     return (
         <div className='internal-content-section'>
             {

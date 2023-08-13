@@ -489,3 +489,18 @@ exports.createPages = async ({ actions, graphql }: CreatePagesArgs) => {
     });
   });
 };
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }: any) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /scrollreveal/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
