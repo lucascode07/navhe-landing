@@ -60,6 +60,10 @@ Runs a local server to preview the build
 - Conventional commits
 - Continuous Integration (Github - Netlify automated deploy)
 
+## Demo
+
+- [Navhe Delivery Landing](https://navhe-delivery-landing.netlify.app)
+
 ## Authors
 
 - [@lucascode07](https://www.github.com/lucascode07) - Lucas Barrenechea
