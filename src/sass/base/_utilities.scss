@@ -325,3 +325,7 @@ body.overflow {
     margin-bottom: 16px;
   }
 }
+
+html.sr .load-hidden {
+  visibility: hidden;
+}

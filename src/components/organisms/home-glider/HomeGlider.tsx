@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import Glider from 'react-glider';
+import ScrollReveal from 'scrollreveal';
 import { GliderProps } from 'react-glider/dist/types';
 import 'glider-js/glider.min.css';
 
@@ -33,8 +34,18 @@ const HomeGlider = () => {
         }
     }
 
+    useEffect(() => {
+        ScrollReveal({
+            origin: 'top',
+            distance: '30px',
+            duration: 1500
+        }).reveal('.o-home-glider')
+    }, []);
+
+
+
     return (
-        <div className='o-home-glider'>
+        <div className='o-home-glider load-hidden'>
 
             <Glider
                 slidesToShow={1}
@@ -48,7 +59,7 @@ const HomeGlider = () => {
                     showGlider &&
                     <>
                         <section className='o-home-glider__section'>
-                            <div className='section-info'>
+                            <div className='section-info xd'>
                                 <div className='section-badge'>
                                     <p>Bienvenidos</p>
                                 </div>
@@ -64,7 +75,7 @@ const HomeGlider = () => {
                                     <img width={145} height={48} src={appleImg} alt="Logo de app store" />
                                 </div>
                             </div>
-                            <img className='section-image section-image__desktop' src={home01Img} alt="imagen de la sección" />
+                            <img className='section-image section-image__desktop xd' src={home01Img} alt="imagen de la sección" />
                         </section>
                         <section className='o-home-glider__section'>
                             <div className='section-info'>
