@@ -60,7 +60,7 @@ const InternalSection = ({ section }: Props) => {
     }, []);
 
     return (
-        <div className='internal-content-section'>
+        <div className='internal-content-section load-hidden'>
             {
                 section.map(content => (
                     <div key={content.title} className='internal-section'>
