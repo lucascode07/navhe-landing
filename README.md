@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://navhe-delivery-landing.netlify.app/">
-    <img alt="Navhe Logo" src="https://navhe.app/assets/images/BienvenidosSection/navigation/xd.svg" width="80" />
+    <img alt="Navhe Logo" src="./static/images/logo-navhe.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
